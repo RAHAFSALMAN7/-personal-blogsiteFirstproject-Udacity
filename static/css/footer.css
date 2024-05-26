@@ -1,0 +1,13 @@
+/* footer.css */
+footer {
+    background-color: #ded9e7;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.social-links a {
+    color: #333;
+    margin: 0 0.5em;
+    font-size: 2em;
+    text-decoration: none;
+}

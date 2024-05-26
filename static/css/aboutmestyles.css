@@ -1,0 +1,160 @@
+ /* General Styles */
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     line-height: 1.6;
+ }
+
+ header {
+     background: #f4f4f4;
+     padding: 20px;
+ }
+
+ .logo {
+     font-size: 1.5em;
+     font-weight: bold;
+     font-family: "Lucida Handwriting", cursive;
+     font-style: italic;
+     color: #2c2c2c;
+ }
+
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .nav-links {
+     list-style: none;
+     padding: 0;
+ }
+
+ .nav-links li {
+     display: inline;
+     margin: 0 10px;
+ }
+
+ .nav-links a {
+     text-decoration: none;
+     color: #333;
+ }
+
+ /* Add this CSS for red flashing animation */
+ .nav-links a:hover {
+     animation: redFlash 0.5s infinite alternate;
+     /* Red flash animation */
+ }
+
+ @keyframes redFlash {
+     from {
+         color: #333;
+         /* Initial color */
+     }
+
+     to {
+         color: rgb(102, 13, 175);
+         /* Flash color */
+     }
+ }
+
+
+
+ .cta {
+     padding: 10px 20px;
+     background: #333;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 5px;
+ }
+
+ /* Main Section */
+ main {
+     padding: 20px;
+ }
+
+ .about-me {
+     max-width: 800px;
+     margin: 0 auto;
+     text-align: center;
+ }
+
+ .about-me h1 {
+     font-size: 36px;
+     margin-bottom: 20px;
+ }
+
+ .about-me p {
+     font-size: 18px;
+     margin-bottom: 20px;
+ }
+
+ /* Dashboard Section */
+ .dashboard {
+     position: fixed;
+     top: 65%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+     padding: 20px;
+     background: #fff;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .dashboard img {
+     width: 150px;
+     /* Adjust size as needed */
+     height: 150px;
+     border-radius: 50%;
+     margin-bottom: 20px;
+     transition: filter 0.3s ease;
+     /* Added transition for hover effect */
+ }
+
+ .dashboard img:hover {
+     filter: brightness(1.2);
+     /* Adjust brightness value for shine effect */
+ }
+
+ aside p {
+     font-size: 16px;
+     line-height: 1.6;
+ }
+
+ /* Footer Section */
+ footer {
+     background: #ded9e7;
+     color: #fff;
+     text-align: center;
+     padding: 20px 0;
+     position: fixed;
+     /* Changed to fixed for better responsiveness */
+     width: 100%;
+     bottom: 0;
+ }
+
+ footer .social-links a {
+     color: #fff;
+     margin: 0 10px;
+     text-decoration: none;
+     font-size: 40px;
+ }
+
+ /* Responsive Styles */
+ @media (max-width: 768px) {
+     nav {
+         flex-direction: column;
+     }
+
+     .nav-links li {
+         display: block;
+         margin: 10px 0;
+     }
+
+     aside {
+         width: 100%;
+         float: none;
+         margin-top: 40px;
+     }
+ }
